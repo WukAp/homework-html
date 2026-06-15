@@ -1,0 +1,26 @@
+<div id="add-item-modal" tabindex="-1" aria-hidden="true" class="hidden">
+    <div class="modal-content">
+        <header class="modal-header">
+            <h1>
+                Add data
+            </h1>
+            <button type="button" data-modal-hide="add-item-modal">
+                <img src="../../resources/cross.svg" alt="Close">
+            </button>
+        </header>
+        <div class="input-container">
+            <label for="transaction">Transaction</label>
+            <input type="text" id="transaction" class="input" placeholder="My transaction" required/>
+        </div>
+        <div class="input-container">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" class="input" placeholder="2300" required/>
+        </div>
+
+        <footer>
+            <button id="add-item-modal-button" data-modal-hide="add-item-modal" type="button" class="button">
+                Add
+            </button>
+        </footer>
+    </div>
+</div>

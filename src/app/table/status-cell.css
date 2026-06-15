@@ -1,0 +1,45 @@
+.status.complete {
+    width: min-content;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #8FBC8F;
+    color: #006400;
+}
+
+.status.complete::before {
+    content: "Complete";
+}
+
+.status.in-progress {
+    width: min-content;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #EEECFE;
+    color: #8967CD;
+}
+
+.status.in-progress::before {
+    content: "In progress";
+}
+
+.status.cancelled {
+    width: min-content;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #FDE8E8;
+    color: #B45151;
+}
+
+.status.cancelled::before {
+    content: "Cancelled";
+}
+

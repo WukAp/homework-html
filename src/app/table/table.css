@@ -1,0 +1,35 @@
+.item-table thead {
+    padding: 12px 24px;
+    background: var(--header-background-color);
+    color: var(--table-header-text-color);
+
+}
+
+.item-table thead th {
+    padding: 12px 24px;
+    text-align: left;
+
+}
+
+.item-table tbody td {
+    padding: 24px;
+}
+
+.item-table tbody tr {
+    border-bottom: 1px solid var(--splitter-color);
+}
+
+.transaction-cell {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.date-cell, .amount-cell {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.amount-cell {
+    font-weight: 700;
+}
+
