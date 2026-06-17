@@ -1,7 +1,7 @@
-<div id="add-item-modal" tabindex="-1" aria-hidden="true" class="hidden">
-    <div class="modal-content">
-        <header class="modal-header">
-            <h1>
+<div id="add-item-modal" tabindex="-1" aria-hidden="true" class="hidden z-50 fixed inset-0 text-[var(--text-color)]">
+    <div class="flex flex-col gap-4 w-[416px] p-5 h-min bg-white">
+        <header class="modal-header flex justify-between border-b border-solid border-[var(--splitter-color)]">
+            <h1 class="text-xl font-semibold">
                 Add data
             </h1>
             <button type="button" data-modal-hide="add-item-modal">
@@ -18,7 +18,7 @@
         </div>
 
         <footer>
-            <button id="add-item-modal-button" data-modal-hide="add-item-modal" type="button" class="button">
+            <button data-modal-hide="add-item-modal" type="button" class="button w-full">
                 Add
             </button>
         </footer>

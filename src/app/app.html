@@ -1,16 +1,17 @@
-<div id="app-wrapper" class="w-[1017px]">
-    <header id="header" class="header">
+<div id="app-wrapper" class="w-[1017px] h-full flex flex-col">
+    <header id="header" class="flex justify-between items-center p-4">
         <img src="../resources/moy-sklad-label.svg" alt="Мой Склад">
-        <button data-modal-target="add-item-modal" data-modal-toggle="add-item-modal" class="add-item-button button">
+        <button data-modal-target="add-item-modal" data-modal-toggle="add-item-modal"
+                class="button flex items-center">
             <img src="../resources/add-button.svg" alt="add">
             Add data
         </button>
     </header>
-    <main>
-        <div id="table-container">
+    <main class="overflow-hidden">
+        <div id="table-container" class="h-full overflow-y-auto">
         </div>
     </main>
-    <footer class="main-page-footer">
+    <footer class="text-[var(--secondary-text-color)] m-4 text-center ">
         © 2007-2024 ООО "Логнекс"
     </footer>
 </div>
