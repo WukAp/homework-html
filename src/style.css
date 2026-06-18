@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#root {
+    --border-color: #D1D5DB;
+    --splitter-color: #E5E7EB;
+    --text-color: #111827;
+    --secondary-text-color: #6B7280;
+    --header-background-color: #F9FAFB;
+    --table-header-text-color: #374151;
+    --spacing: 16px;
+    --border-radius: 8px;
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 7px 14px;
+    background-color: #1A56DB;
+    color: white;
+}

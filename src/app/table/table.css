@@ -1,0 +1,27 @@
+th {
+    padding: 12px 24px;
+    text-align: left;
+}
+
+td {
+    padding: 24px;
+}
+
+tr {
+    border-bottom: 1px solid var(--splitter-color);
+}
+
+.transaction-cell {
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.date-cell, .amount-cell {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+.amount-cell {
+    font-weight: 700;
+}
+
