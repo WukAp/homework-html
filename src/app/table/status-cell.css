@@ -1,45 +1,36 @@
-.status.complete {
+.status {
     width: min-content;
     padding: 0 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+}
+
+.status--complete {
     background-color: #8FBC8F;
     color: #006400;
 }
 
-.status.complete::before {
+.status--complete::before {
     content: "Complete";
 }
 
-.status.in-progress {
-    width: min-content;
-    padding: 0 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+.status--in-progress {
     background-color: #EEECFE;
     color: #8967CD;
 }
 
-.status.in-progress::before {
+.status--in-progress::before {
     content: "In progress";
 }
 
-.status.cancelled {
-    width: min-content;
-    padding: 0 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+.status--cancelled {
     background-color: #FDE8E8;
     color: #B45151;
 }
 
-.status.cancelled::before {
+.status--cancelled::before {
     content: "Cancelled";
 }
 

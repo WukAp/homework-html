@@ -1,21 +1,13 @@
-.item-table thead {
-    padding: 12px 24px;
-    background: var(--header-background-color);
-    color: var(--table-header-text-color);
-
-}
-
-.item-table thead th {
+th {
     padding: 12px 24px;
     text-align: left;
-
 }
 
-.item-table tbody td {
+td {
     padding: 24px;
 }
 
-.item-table tbody tr {
+tr {
     border-bottom: 1px solid var(--splitter-color);
 }
 
