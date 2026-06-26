@@ -5,13 +5,22 @@
 * {
     --border-color: #D1D5DB;
     --border-error-color: #D1656B;
+
     --splitter-color: #E5E7EB;
+
     --text-color: #111827;
     --secondary-text-color: #6B7280;
+
     --header-bg-color: #F9FAFB;
     --table-header-text-color: #374151;
+
     --button-bg-color: #1A56DB;
     --hover-button-bg-color: #1547B7;
+
+    --secondary-button-bg-color: #BADAFB;
+    --secondary-hover-button-bg-color: #8DB6FB;
+    --secondary-button-text-color: #1547B7;
+
     --spacing: 16px;
     --border-radius: 8px;
 }
@@ -43,3 +52,13 @@ html, body {
 .button:hover {
     background-color: var(--hover-button-bg-color);
 }
+
+.secondary-button {
+    background-color: var(--secondary-button-bg-color);
+    color: var(--secondary-button-text-color);
+}
+
+.secondary-button:hover {
+    background-color: var(--secondary-hover-button-bg-color);
+}
+
