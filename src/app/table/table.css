@@ -6,21 +6,20 @@
     border-bottom: 2px solid var(--border-color);
 }
 
-.item-table thead th {
+th {
     padding: 12px 24px;
     text-align: left;
-
 }
 
-.item-table tbody td {
+td {
     padding: 24px;
 }
 
-.item-table tbody tr {
+tr {
     cursor: pointer;
     border-bottom: 1px solid var(--splitter-color);
 }
-.item-table tbody tr:hover {
+tr:hover {
     background: var(--header-bg-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -38,5 +37,3 @@
 .address-cell {
     font-weight: 700;
 }
-
-
