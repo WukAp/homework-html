@@ -3,12 +3,19 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 module.exports = {
-    entry: './src/main.js',
+    entry: './src/main.ts',
     module: {
-
         rules: [
+            {
+                test: /\.(js|ts)x?$/i,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                },
+            },
             {
                 test: /\.css$/i,
                 include: [
@@ -50,6 +57,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
+        }),
+        new ForkTsCheckerWebpackPlugin({
+            typescript: {
+                configFile: path.resolve(__dirname, 'tsconfig.json'),
+            },
         })
     ]
 };
