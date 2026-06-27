@@ -14,14 +14,23 @@ const initAddItemModal = () => {
 
 const initModalItem = () => {
     const modalElement = document.getElementById('add-item-modal');
+
+    //очищать каждый раз при открытии - костыль, уйдёт в реакте
+    window.addEventListener('load', () => {
+        const modal = window.FlowbiteInstances.getInstance('Modal', 'add-item-modal');
+        modal.updateOnShow(() => {
+            modalElement.querySelectorAll('input').forEach((input) => {
+                input.value = '';
+                input.classList.remove('error-input');
+            });
+        });
+    });
+
     const nameInput = modalElement.querySelector('#add-item-name');
     const innInput = modalElement.querySelector('#add-item-inn');
     const addressInput = modalElement.querySelector('#add-item-address');
     const kppInput = modalElement.querySelector('#add-item-kpp');
     const saveButton = modalElement.querySelector('#add-item-save-button');
-
-    innInput.classList.remove('error-input');
-    kppInput.classList.remove('error-input');
 
     if (saveButton._saveHandler) {
         saveButton.removeEventListener('click', saveButton._saveHandler);
