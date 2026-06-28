@@ -1,3 +1,11 @@
+.item-table thead {
+    padding: 12px 24px;
+    background: var(--header-bg-color);
+    color: var(--table-header-text-color);
+
+    border-bottom: 2px solid var(--border-color);
+}
+
 th {
     padding: 12px 24px;
     text-align: left;
@@ -8,20 +16,24 @@ td {
 }
 
 tr {
+    cursor: pointer;
     border-bottom: 1px solid var(--splitter-color);
 }
+tr:hover {
+    background: var(--header-bg-color);
+    border-bottom: 1px solid var(--border-color);
+}
 
-.transaction-cell {
+.name-cell {
     color: var(--text-color);
     font-weight: 400;
 }
 
-.date-cell, .amount-cell {
+.inn-cell, .address-cell {
     color: var(--secondary-text-color);
     font-weight: 400;
 }
 
-.amount-cell {
+.address-cell {
     font-weight: 700;
 }
-

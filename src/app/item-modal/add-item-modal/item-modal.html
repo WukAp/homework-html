@@ -1,0 +1,37 @@
+<div id="add-item-modal" tabindex="-1" aria-hidden="true" data-modal-backdrop="static"
+     class="hidden z-50 fixed inset-0 text-[var(--text-color)]">
+    <div class="flex flex-col gap-4 w-[416px] p-5 h-min bg-white">
+        <header class="modal-header flex justify-between border-b border-solid border-[var(--splitter-color)]">
+            <h1 class="item-model-header text-xl font-semibold">
+                Добавить контрагента
+            </h1>
+            <button type="button" data-modal-hide="add-item-modal">
+                <img src="../../../resources/icon/cross.svg" alt="Close">
+            </button>
+        </header>
+        <div class="input-container">
+            <label for="add-item-name">Наименование</label>
+            <input type="text" id="add-item-name" class="input" placeholder='ООО "Ромашка"...' required/>
+        </div>
+        <div class="input-container">
+            <label for="add-item-inn">ИНН</label>
+            <input type="text" maxlength="11" id="add-item-inn" class="input" placeholder="00000000000" required/>
+        </div>
+        <div class="input-container">
+            <label for="add-item-address">Адрес</label>
+            <input type="text" id="add-item-address" class="input" placeholder="г. СПБ, Невский пр-т, д. 22" required/>
+        </div>
+        <div class="input-container">
+            <label for="add-item-kpp">КПП</label>
+            <input type="text" maxlength="9" id="add-item-kpp" class="input" placeholder="000000000" required/>
+        </div>
+        <footer class="flex gap-4 justify-end">
+            <button id="add-item-save-button" type="button" class="button w-full">
+                Сохранить
+            </button>
+            <button data-modal-hide="add-item-modal" type="button" class="button secondary-button w-full">
+                Отменить
+            </button>
+        </footer>
+    </div>
+</div>
